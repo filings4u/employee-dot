@@ -424,3 +424,23 @@ body[data-portal-page="pools"] .table-wrap .empty{padding:14px 6px!important}
 
 /* Employee DOT consent / acknowledgment completion */
 .consent-employee-metrics{margin-bottom:12px}.consent-employee-note{margin-bottom:0}.employee-consent-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.employee-consent-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:var(--shadow)}.employee-consent-card.needs-action{border-left:4px solid var(--orange)}.employee-consent-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.employee-consent-card h3{font-size:13px;color:var(--ink);margin:10px 0 6px}.employee-consent-card>p{font-size:9.5px;color:var(--muted);line-height:1.5;min-height:30px}.agency-tag,.form-kind{display:inline-flex;padding:4px 7px;border-radius:999px;font-size:7.8px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}.agency-tag{background:#eaf1fb;color:var(--blue)}.form-kind{background:#f1f4f7;color:var(--muted);margin-left:5px}.employee-consent-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.employee-consent-meta span{background:#f7f9fb;border-radius:8px;padding:8px;font-size:9px;color:var(--ink)}.employee-consent-meta b{display:block;font-size:7.5px;text-transform:uppercase;color:var(--muted);margin-bottom:3px}.employee-consent-actions{margin-top:12px}.employee-consent-actions .btn{width:100%}.employee-consent-modal{max-height:90vh;overflow:auto}.employee-consent-modal-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:12px}.employee-consent-modal-head h2{margin:8px 0 3px}.employee-consent-modal-head p{font-size:9px;color:var(--muted)}.employee-consent-body{border:1px solid var(--line);border-radius:10px;padding:16px;font-size:11px;line-height:1.7;color:var(--ink);background:#fff;margin:12px 0}.employee-consent-source{font-size:9px;margin:10px 0 14px}.employee-consent-source strong{display:block;color:var(--muted);margin-bottom:3px}.employee-consent-source a{color:var(--blue);font-weight:800}.employee-consent-confirm{display:flex;align-items:flex-start;gap:9px;padding:12px;border:1px solid var(--line);border-radius:9px;margin-top:12px;font-size:10px;line-height:1.45}.employee-consent-confirm input{margin-top:2px}.legal-note{margin-top:10px;font-size:9px}.employee-consent-complete{padding:12px;border-radius:9px;background:#eaf7ef;color:var(--good);margin-top:12px}.employee-consent-complete strong,.employee-consent-complete span{display:block}.employee-consent-complete span{font-size:9px;margin-top:4px}.completed-hidden{margin-top:12px}@media(max-width:760px){.employee-consent-grid{grid-template-columns:1fr}.employee-consent-meta{grid-template-columns:1fr 1fr}.employee-consent-modal-head{flex-direction:column}}
+
+
+/* Employee profile correction/update request */
+.profile-update-tip{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.profile-update-tip>div{display:flex;align-items:flex-start;gap:11px;min-width:0}
+.profile-update-icon{display:inline-grid;place-items:center;width:25px;height:25px;min-width:25px;border-radius:50%;background:#eaf1fb;color:var(--blue);font-size:12px;font-weight:900}
+.profile-update-tip strong{display:block;color:var(--ink);font-size:11.5px;line-height:1.35}
+.profile-update-tip p{margin:4px 0 0;color:var(--muted);font-size:9.5px;line-height:1.45}
+.profile-update-tip .btn{white-space:nowrap}
+.profile-update-modal{max-width:560px}
+.profile-update-modal .modal-subtitle{margin:5px 0 16px;color:var(--muted);font-size:10px;line-height:1.5}
+.profile-update-modal textarea{width:100%;resize:vertical}
+.profile-update-delivery{padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#f7f9fb;margin-top:12px}
+.profile-update-delivery strong,.profile-update-delivery span{display:block}
+.profile-update-delivery strong{font-size:10px;color:var(--ink)}
+.profile-update-delivery span{font-size:9px;color:var(--muted);margin-top:3px}
+.profile-update-success{text-align:center;padding:8px}
+.profile-update-success strong{font-size:18px;color:var(--ink)}
+.profile-update-success p{font-size:10px;color:var(--muted);margin:8px 0 18px}
+@media(max-width:640px){.profile-update-tip{align-items:stretch;flex-direction:column}.profile-update-tip .btn{width:100%}}
