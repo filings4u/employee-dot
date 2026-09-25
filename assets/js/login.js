@@ -39,7 +39,7 @@ const waitForTurnstile=()=>{
 async function route(){
   const {data:{session}}=await sb.auth.getSession();
   if(!session)return false;
-  const r=await fetch(`${C.workforceUrl}/functions/v1/workforce-session-context`,{
+  const r=await fetch(`${C.workforceUrl}/functions/v1/dot-session-context`,{
     method:'POST',
     headers:{'Content-Type':'application/json','Authorization':`Bearer ${session.access_token}`,'apikey':C.workforceKey},
     body:JSON.stringify({requested_portal_code:C.portalCode})
@@ -72,7 +72,7 @@ form.onsubmit=async e=>{
 };
 
 magic.onclick=async()=>{
-  const email=prompt('Email address');
+  const email=await S4UDialog.prompt('Email address');
   if(!email)return;
   if(!turnstileToken){set('Complete the security check before requesting a sign-in link.',true);return}
   magic.disabled=true;
