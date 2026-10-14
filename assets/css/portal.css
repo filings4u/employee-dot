@@ -444,3 +444,7 @@ body[data-portal-page="pools"] .table-wrap .empty{padding:14px 6px!important}
 .profile-update-success strong{font-size:18px;color:var(--ink)}
 .profile-update-success p{font-size:10px;color:var(--muted);margin:8px 0 18px}
 @media(max-width:640px){.profile-update-tip{align-items:stretch;flex-direction:column}.profile-update-tip .btn{width:100%}}
+
+/* Mobile layout safeguards */
+@media(max-width:900px){.content,.main-content,main{max-width:100%;min-width:0}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}input,select,textarea{max-width:100%}}
+@media(max-width:640px){.content,.main-content{padding:16px!important}.panel-head{flex-wrap:wrap;gap:12px}.grid,.form-grid{grid-template-columns:1fr!important}.toolbar,.filters,.actions{flex-wrap:wrap}.hero{padding:20px!important}.table-wrap{width:100%}button,.btn,input,select{font-size:16px}}
